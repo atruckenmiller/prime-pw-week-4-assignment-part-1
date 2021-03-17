@@ -24,14 +24,14 @@ function addNumbers( firstNumber, secondNumber ) {
   let addNumbers = 2 + 4;
   return addNumbers;
 }
-console.log( 'Running addNumbers with 2 and 4:', addNumbers( 2, 4));
+console.log( 'In Add Numbers:', addNumbers( 2, 4));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
   let multiplyThree = 3 * 4 * 5;
   return multiplyThree;
 }
-console.log( 'running MultiplyThree with 3, 4 & 5:', multiplyThree( 3, 4, 5));
+console.log( 'In MultiplyThree with 3, 4 & 5:', multiplyThree( 3, 4, 5));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
@@ -51,20 +51,26 @@ console.log( 'isPositive - should say true', isPositive(1) );
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast( array ) {
-  return 'undefined';
+  let last = array[array.length - 1];
 }
-console.log('Test should say undefined:', getLast());
+console.log('in getLast:', getLast([4]));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
-  for (x=value; x= find.length; x++){
-    return true;
+function find( value, array )
+{
+  for (let l = 0; l < array.length; l++)
+  { if (array[l] === value)
+    {
+      return true;
+    }
   }
-    return false;
-  }
-  console.log('Value is found:', find());
+  return false;
+}
+
+console.log('Find the value in an array:', find(54, [1, 30, 93, 68, 2]));
+console.log('Find the value in the array:', find(2, [1, 2, 3, 4, -8, 0, 9]));
 
 // ----------------------
 // Stretch Goals
@@ -94,7 +100,6 @@ function sumAll( ) {
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-function allPositive()
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
@@ -105,7 +110,7 @@ function allPositive()
 //
 function triArea(base, height) {
   const result = (base * height) / 2
-let triArea =( 8, 4) / 2;
+  let triArea =( 8, 4) / 2;
   return result;
 }
 console.log( 'Running Area of Triangle with 8 & 4:', triArea(8, 4));
