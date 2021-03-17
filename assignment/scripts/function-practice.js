@@ -53,7 +53,7 @@ console.log( 'isPositive - should say true', isPositive(1) );
 function getLast( array ) {
   let last = array[array.length - 1];
 }
-console.log('in getLast:', getLast([4]));
+console.log('in getLast:', getLast([4, 10, 20] ));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
@@ -78,10 +78,9 @@ console.log('Find the value in the array:', find(2, [1, 2, 3, 4, -8, 0, 9]));
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
  function isFirstLetter(letter, string){
-   if (firstLetter = 'a'){
+   if (string [0] === letter){
      return true;
-   }
-   if (firstLetter = 'z'){
+   } {
      return false;
    }
  }
@@ -107,7 +106,7 @@ function sumAll( ) {
 
 // Edabit Function explanation: This problem here I picked out from Edabit is describing the area of a triangle. To write the function, you write area of triangle equals
 // for the top function. To find the area of the triangle, the formula is base * height / 2.
-//
+
 function triArea(base, height) {
   const result = (base * height) / 2
   let triArea =( 8, 4) / 2;
