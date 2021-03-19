@@ -24,7 +24,7 @@ function addNumbers( firstNumber, secondNumber ) {
   let addNumbers = 2 + 4;
   return addNumbers;
 }
-console.log( 'In Add Numbers:', addNumbers( 2, 4));
+console.log( 'In addNumbers with 2 & 4:', addNumbers( 2, 4));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
@@ -51,22 +51,22 @@ console.log( 'isPositive - should say true', isPositive(1) );
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast( array ) {
-  let last = array[array.length - 1];
+  let getLast = array[array.length - 1];
 }
 console.log('in getLast:', getLast([4, 10, 20] ));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array )
-{
+
+function find( value, array ){
   for (let l = 0; l < array.length; l++)
   { if (array[l] === value)
     {
       return true;
     }
   }
-  return false;
+    return false;
 }
 
 console.log('Find the value in an array:', find(54, [1, 30, 93, 68, 2]));
@@ -77,6 +77,7 @@ console.log('Find the value in the array:', find(2, [1, 2, 3, 4, -8, 0, 9]));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
+
  function isFirstLetter(letter, string){
    if (string [0] === letter){
      return true;
@@ -89,11 +90,17 @@ console.log('Find the value in the array:', find(2, [1, 2, 3, 4, -8, 0, 9]));
  console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
+let numarray = [1, 5, 9];
+let sum = 0;
+function sumAll(numarray) {
+
   // TODO: loop to add items
+for (let i=0; i<numarray.length; i++){
+  sum = sum + numarray[i];
+  }
   return sum;
 }
+console.log(sumAll(numarray));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -105,7 +112,8 @@ function sumAll( ) {
 //     here in a comment, write the function, and test it!
 
 // Edabit Function explanation: This problem here I picked out from Edabit is describing the area of a triangle. To write the function, you write area of triangle equals
-// for the top function. To find the area of the triangle, the formula is base * height / 2.
+// for the top function where it is the base and the height.
+//To find the area of the triangle, the formula is base * height / 2, and that is what is added in the console log with the numbers you want the area of triangle to be.
 
 function triArea(base, height) {
   const result = (base * height) / 2
