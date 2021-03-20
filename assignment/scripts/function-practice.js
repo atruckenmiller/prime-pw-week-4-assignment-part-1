@@ -28,7 +28,7 @@ console.log( 'In addNumbers with 2 & 4:', addNumbers( 2, 4));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
-  let multiplyThree = 3 * 4 * 5;
+  let multiplyThree = 3 * 4 * 5; // numbers I added in for the function to multiply
   return multiplyThree;
 }
 console.log( 'In MultiplyThree with 3, 4 & 5:', multiplyThree( 3, 4, 5));
@@ -46,18 +46,25 @@ function isPositive( number ) {
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
-console.log( 'isPositive - should say true', isPositive(1) );
+console.log( 'isPositive - should say true', isPositive(1) ); // created another positive number to test the return.
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-function getLast( array ) {
-  let getLast = array[array.length - 1];
+function getLast(array){
+  return array[array.length- 1];
 }
-console.log('in getLast:', getLast([4, 10, 20] ));
+
+console.log('Last item of array should be 29:', getLast([1, 5, 11, 23, 29]));
+console.log('Last item of array should be 18:', getLast([1, 2, 3, 6, 9, 18]));
+console.log('Last item of array should be undefined:', getLast([]));
+console.log('Last item of array should be 3:', getLast([3]));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
+
+// Explanation of code: testing out the array lengths for values and the array. and created two different array sets in the console log to test
+// one set of numbers for true, and one set of numbers for false.
 
 function find( value, array ){
   for (let l = 0; l < array.length; l++)
@@ -78,6 +85,9 @@ console.log('Find the value in the array:', find(2, [1, 2, 3, 4, -8, 0, 9]));
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 
+// Explanation of Code: For this one, I decided to create my conditional statements inside the function if the string index = [0], since the first letter by its array index is [0].
+// Then I went down to check the console logs on the bottom, and did one return of true for the a being in apple, and return false for the last letter z, since z wasn't in the string.
+
  function isFirstLetter(letter, string){
    if (string [0] === letter){
      return true;
@@ -95,12 +105,12 @@ let sum = 0;
 function sumAll(numarray) {
 
   // TODO: loop to add items
-for (let i=0; i<numarray.length; i++){
-  sum = sum + numarray[i];
+for (let t=0; t<numarray.length; t++){
+  sum = sum + numarray[t];
   }
   return sum;
 }
-console.log(sumAll(numarray));
+console.log('Total sum of numarray:', sumAll(numarray));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -116,8 +126,8 @@ console.log(sumAll(numarray));
 //To find the area of the triangle, the formula is base * height / 2, and that is what is added in the console log with the numbers you want the area of triangle to be.
 
 function triArea(base, height) {
-  const result = (base * height) / 2
-  let triArea =( 8, 4) / 2;
+  const result = (base * height) / 2 // formula for triangle area
+  let triArea =( 8, 4) / 2; // numbers I added in for area to test.
   return result;
 }
-console.log( 'Running Area of Triangle with 8 & 4:', triArea(8, 4));
+console.log( 'Total area of triangle with 8 & 4:', triArea(8, 4));
