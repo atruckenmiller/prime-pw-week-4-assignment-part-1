@@ -51,7 +51,7 @@ console.log( 'isPositive - should say true', isPositive(1) ); // created another
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast(array){
-  return array[array.length- 1];
+  return array[array.length - 1];
 }
 
 console.log('Last item of array should be 29:', getLast([1, 5, 11, 23, 29]));
@@ -76,8 +76,8 @@ function find( value, array ){
     return false;
 }
 
-console.log('Find the value in an array:', find(54, [1, 30, 93, 68, 2]));
-console.log('Find the value in the array:', find(2, [1, 2, 3, 4, -8, 0, 9]));
+console.log('Find the value in an array:', find(54, [1, 30, 93, 68, 2])); // code is testing out if numbers are in array.
+console.log('Find the value in the array:', find(2, [1, 2, 3, 4, -8, 0, 9])); // code is testing out if numbers are in array.
 
 // ----------------------
 // Stretch Goals
@@ -106,7 +106,7 @@ function sumAll(numarray) {
 
   // TODO: loop to add items
 for (let t=0; t<numarray.length; t++){
-  sum = sum + numarray[t];
+  sum = sum + numarray[t]; // total sum equals up the total set of numbers in the total array from the top.
   }
   return sum;
 }
@@ -130,4 +130,4 @@ function triArea(base, height) {
   let triArea =( 8, 4) / 2; // numbers I added in for area to test.
   return result;
 }
-console.log( 'Total area of triangle with 8 & 4:', triArea(8, 4));
+console.log( 'Total area of triangle with 8 & 4:', triArea(8, 4)); 
